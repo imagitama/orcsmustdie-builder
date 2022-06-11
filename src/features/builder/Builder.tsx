@@ -756,6 +756,14 @@ export function Builder() {
       <Build />
       <Shop />
       <Exporter />
+      <Button
+        onClick={() => {
+          window.localStorage.clear();
+          window.location.href = window.location.href.split("?")[0];
+        }}
+      >
+        Reset
+      </Button>
     </div>
   );
 }
