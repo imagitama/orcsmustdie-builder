@@ -195,7 +195,14 @@ const ItemTileUpgrade = ({
       }}
       title={description}
     >
-      {label} {isPurchased ? <PurchasedIcon tiny /> : ""}
+      {label}{" "}
+      {isPurchased ? (
+        <span style={{ marginLeft: "0.25rem" }}>
+          <PurchasedIcon tiny />
+        </span>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
@@ -348,7 +355,7 @@ const Build = () => {
         marginBottom: "1rem",
       }}
     >
-      {[0, 1, 2, 3, 4].map((idx) => (
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((idx) => (
         <div style={{ margin: "0.25rem" }}>
           {highlightedItems[idx] ? (
             <IconForBuild name={highlightedItems[idx]} />
@@ -376,11 +383,11 @@ const MyItems = () => {
     ...items.filter((item) => item.unlockCost === 0).map((item) => item.name),
   ];
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <ItemTiles>
       {itemNames.map((itemName) => (
-        <ItemIcon name={itemName} withName />
+        <ItemTile name={itemName} />
       ))}
-    </div>
+    </ItemTiles>
   );
 };
 
@@ -571,7 +578,7 @@ const PurchasedIcon = ({
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      opacity: hollow ? 0.5 : 0,
+      opacity: tiny || hollow ? 0.5 : 0,
     }}
   >
     <DoneIcon style={{ fontSize: small ? "250%" : tiny ? "75%" : "500%" }} />
