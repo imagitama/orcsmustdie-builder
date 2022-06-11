@@ -143,16 +143,85 @@ const ItemIcon = ({
 };
 
 const IconForBuild = ({ name }: { name: string }) => {
-  const { imageUrl } = getItemByName(name);
+  const { imageUrl, upgrades } = getItemByName(name);
   const dispatch = useAppDispatch();
   const onClickItem = () => dispatch(selectItem(name));
 
   return (
     <div
       onClick={() => onClickItem()}
-      style={{ width: "100px", cursor: "pointer" }}
+      style={{
+        width: "100px",
+        cursor: "pointer",
+        outline: "2px solid rgb(25, 25, 25)",
+        position: "relative",
+      }}
     >
       <img src={imageUrl} style={{ width: "100%", maxHeight: "100px" }} />
+      <div style={{ position: "absolute", bottom: 0, left: 0 }}>
+        <ItemIconUpgrades upgrades={upgrades} />
+      </div>
+    </div>
+  );
+};
+
+const ItemIconUpgrade = ({
+  upgrades,
+  upgrade: { name, type, description },
+}: {
+  upgrades: Upgrade[];
+  upgrade: Upgrade;
+}) => {
+  const allUpgradesForType = upgrades.filter(
+    (upgrade) => upgrade.type === type
+  );
+  const thisIndex = allUpgradesForType.findIndex(
+    (upgrade) => upgrade.name === name
+  );
+
+  const label = `${type.substring(0, 1)}${thisIndex + 1}`;
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "15px",
+        height: "15px",
+        borderRadius: "100%",
+        background: "rgba(100, 100, 100, 0.8)",
+        fontSize: "60%",
+        marginRight: "0.1rem",
+      }}
+      title={description}
+    >
+      {label}{" "}
+    </div>
+  );
+};
+
+const ItemIconUpgrades = ({ upgrades }: { upgrades: Upgrade[] }) => {
+  const allPurchasedUpgrades = useAppSelector(selectPurchasedUpgrades);
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "right",
+        margin: "0.1rem",
+      }}
+    >
+      {upgrades
+        .filter(({ name }) => allPurchasedUpgrades.includes(name))
+        .map((upgrade) => (
+          <ItemIconUpgrade
+            key={upgrade.name}
+            upgrades={upgrades}
+            upgrade={upgrade}
+          />
+        ))}
     </div>
   );
 };
@@ -163,7 +232,7 @@ const EmptyItemIcon = () => {
       style={{
         width: "100px",
         height: "100px",
-        background: "rgb(0, 0, 0)",
+        outline: "1px solid rgb(25, 25, 25)",
       }}
     ></div>
   );
@@ -832,12 +901,14 @@ const Exporter = () => {
     navigator.clipboard.writeText(exportedUrl);
   };
 
+  if (!exportedUrl) {
+    return <Button onClick={() => updateExportedUrl()}>Export...</Button>;
+  }
+
   return (
     <>
-      <TextField value={exportedUrl} /> <Button onClick={copy}>Copy</Button>
-      <br />
-      <br />
-      <Button onClick={updateExportedUrl}>Export</Button>
+      <TextField value={exportedUrl} /> <Button onClick={copy}>Copy</Button>{" "}
+      <Button onClick={() => setExportedUrl("")}>Done</Button>
     </>
   );
 };
@@ -860,27 +931,29 @@ const SearchInput = () => {
 export function Builder() {
   return (
     <div>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", alignItems: "center" }}>
         <div>
           <SearchInput />
         </div>
         <div style={{ width: "100%" }}>
           <Skulls />
         </div>
+        <div>
+          <Exporter />
+        </div>
+        <div>
+          <Button
+            onClick={() => {
+              window.localStorage.clear();
+              window.location.href = window.location.href.split("?")[0];
+            }}
+          >
+            Reset
+          </Button>
+        </div>
       </div>
       <Build />
       <Shop />
-      <hr />
-      <Exporter />
-      <hr />
-      <Button
-        onClick={() => {
-          window.localStorage.clear();
-          window.location.href = window.location.href.split("?")[0];
-        }}
-      >
-        Reset
-      </Button>
     </div>
   );
 }
