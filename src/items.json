@@ -1,0 +1,1748 @@
+[
+  {
+    "name": "Acid Sprayer",
+    "shortDescription": "Sprays acid when enemies pass by; resets after firing",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Acid deals additional damage",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Acid deals additional damage",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Acid deals additional damage",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Acid shoots out further",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Acid briefly slows targets",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Wall",
+    "character": "Sorceress"
+  },
+  {
+    "name": "Archer Guardian",
+    "shortDescription": "Fires arrows at distant enemies",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Cost to place 650, 575, 500",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Cost to place 650, 575, 500",
+        "unlockCost": 5
+      },
+      {
+        "type": "Tier",
+        "description": "Cost to place 650, 575, 500",
+        "unlockCost": 11
+      },
+      {
+        "type": "Unique",
+        "description": "Arrows sometimes sets targets on fire",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Archers regenerate health",
+        "unlockCost": 5
+      }
+    ],
+    "placement": null,
+    "character": null
+  },
+  {
+    "name": "Arrow Wall",
+    "shortDescription": "Fires a volley of arrows at enemies that pass; resets after firing",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Arrows do additional damage",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Arrows do additional damage",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Arrows do additional damage",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Arrows sometimes set targets on fire",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Arrows sometimes chill enemies, reducing their movement speed",
+        "unlockCost": 5
+      },
+      {
+        "type": "Special",
+        "description": "Arrow Walls can now be placed on ceilings",
+        "unlockCost": 11
+      }
+    ],
+    "placement": "Wall",
+    "character": "War Mage"
+  },
+  {
+    "name": "Autoballista",
+    "shortDescription": "Automatically attacks the enemy; limited arc of fire",
+    "type": "Trap",
+    "unlockCost": 13,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Autoballista fires faster",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Autoballista fires faster",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Autoballista fires faster",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Autoballista attack briefly stuns enemies",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Autoballista range increased",
+        "unlockCost": 6
+      },
+      {
+        "type": "Special",
+        "description": "Autoballista can now be placed on walls",
+        "unlockCost": 12
+      }
+    ],
+    "placement": "Ceiling",
+    "character": null
+  },
+  {
+    "name": "Barricade",
+    "shortDescription": "Obstacle that blocks the enemy’s path",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Cost reduced to 800, 700, 600",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Cost reduced to 800, 700, 600",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Cost reduced to 800, 700, 600",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Barricades take reduced damage from attacks",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Barricades self-repair shortly after taking damage",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Bear Trap",
+    "shortDescription": "Stuns and damages an enemy; breaks when triggered",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Bear Trap damage increased",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Bear Trap damage increased",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Bear Trap damage increased",
+        "unlockCost": 12
+      },
+      {
+        "type": "Unique",
+        "description": "Bear trap freezes targets instead of stunning them",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Bear trap sets targets on fire instead of stunning them",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Boom Barrel",
+    "shortDescription": "Blows up when damaged",
+    "type": "Trap",
+    "unlockCost": 3,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Explosion damage increased",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Explosion damage increased",
+        "unlockCost": 5
+      },
+      {
+        "type": "Tier",
+        "description": "Explosion damage increased",
+        "unlockCost": 10
+      },
+      {
+        "type": "Unique",
+        "description": "Boom barrels cost reduced to 150",
+        "unlockCost": 4
+      },
+      {
+        "type": "Unique",
+        "description": "Increases explosion radius",
+        "unlockCost": 4
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Boom Barrel Dispenser",
+    "shortDescription": "Automatically creates boom barrels",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Spawns boom barrels faster",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Spawns boom barrels faster",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Spawns boom barrels faster",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Spawned boom barrels will automatically explode when near enemies",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Spawned boom barrels also get all boom barrel upgrades",
+        "unlockCost": 6
+      }
+    ],
+    "placement": "Wall",
+    "character": null
+  },
+  {
+    "name": "Boulder Chute",
+    "shortDescription": "Shoot to drop boulders on enemies; resets after firing",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Boulder chute reset time reduced",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Boulder chute reset time reduced",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Boulder chute reset time reduced",
+        "unlockCost": 14
+      },
+      {
+        "type": "Unique",
+        "description": "Boulder chutes sometimes drop coins",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Boulder chutes sometimes drop bombs",
+        "unlockCost": 6
+      }
+    ],
+    "placement": "Ceiling",
+    "character": null
+  },
+  {
+    "name": "Brimstone",
+    "shortDescription": "Burns enemies; fades out after doing damage; recharges over time",
+    "type": "Trap",
+    "unlockCost": 7,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Burns 3, 4, 5 mobs before running out of heat",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Burns 3, 4, 5 mobs before running out of heat",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Burns 3, 4, 5 mobs before running out of heat",
+        "unlockCost": 12
+      },
+      {
+        "type": "Unique",
+        "description": "Brimstone heats up faster",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies set on fire burn longer",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Coinforge",
+    "shortDescription": "Enemies that die on a coinforge drop more coins",
+    "type": "Trap",
+    "unlockCost": 5,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Enemies that die on the Coinforge are worth more coin",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Enemies that die on the Coinforge are worth more coin",
+        "unlockCost": 5
+      },
+      {
+        "type": "Tier",
+        "description": "Enemies that die on the Coinforge are worth more coin",
+        "unlockCost": 11
+      },
+      {
+        "type": "Unique",
+        "description": "Coinforge effect persists briefly after enemies leave the Coinforge",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies affected by the Coinforge take additional damage",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Decoy",
+    "shortDescription": "Looks oddly like a war mage; explodes if destroyed by enemies",
+    "type": "Trap",
+    "unlockCost": 11,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Decoy health increased",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Decoy health increased",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Decoy health increased",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Decoy will reappear a short time after being destroyed, but no longer explodes",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies that attack the decoy are chilled and sometimes frozen",
+        "unlockCost": 6
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Dwarf Guardian",
+    "shortDescription": "Throws explosive bombs at enemies",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Dwarf attacks do increased damage",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Dwarf attacks do increased damage",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Dwarf attacks do increased damage",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Dwarf bombs sometimes cause targets to briefly bleed",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Dwarf melee attacks sometimes knock back foes",
+        "unlockCost": 5
+      }
+    ],
+    "placement": null,
+    "character": null
+  },
+  {
+    "name": "Floor Scorcher",
+    "shortDescription": "Flips up and burns groups of enemies and throws small mobs a short distance",
+    "type": "Trap",
+    "unlockCost": 16,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Floor Scorcher Damage Increased",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Floor Scorcher Damage Increased",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Floor Scorcher Damage Increased",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Floor Scorcher burns targets longer",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Flames cover a larger arc",
+        "unlockCost": 6
+      },
+      {
+        "type": "Special",
+        "description": "Floor Scorcher can now be placed on walls",
+        "unlockCost": 13
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Grinder",
+    "shortDescription": "Sucks in enemies that get too close; runs constantly until it jams",
+    "type": "Trap",
+    "unlockCost": 12,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Increased damage; clears jams faster",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Increased damage; clears jams faster",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Increased damage; clears jams faster",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Grinder unjams much more quickly",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Grinder sometimes makes monsters bleed for a short time",
+        "unlockCost": 6
+      }
+    ],
+    "placement": "Wall",
+    "character": null
+  },
+  {
+    "name": "Haymaker",
+    "shortDescription": "Spins and knocks around enemies; resets after firing",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Haymaker deals more damage",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Haymaker deals more damage",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Haymaker deals more damage",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Haymaker throws enemies with more force",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Haymaker sometimes stuns heavier mobs it can’t throw",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Ceiling",
+    "character": null
+  },
+  {
+    "name": "Healing Well",
+    "shortDescription": "Restores player health; takes time to recharge",
+    "type": "Trap",
+    "unlockCost": 12,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Additional stored health",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Additional stored health",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Additional stored health",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Healing Well cost reduced to 400",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Healing Well recharges more quickly",
+        "unlockCost": 6
+      }
+    ],
+    "placement": "Wall",
+    "character": null
+  },
+  {
+    "name": "Ice Vent",
+    "shortDescription": "Freezes enemies; resets after firing",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Ice Vent reset time reduced",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Ice Vent reset time reduced",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Ice Vent reset time reduced",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Ice Vent freeze lasts longer",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies become chilled and move slowly for a time after freeze effect is broken",
+        "unlockCost": 5
+      },
+      {
+        "type": "Special",
+        "description": "Ice Vent can now be placed on ceiling",
+        "unlockCost": 11
+      }
+    ],
+    "placement": "Floor",
+    "character": "Sorceress"
+  },
+  {
+    "name": "Mana Well",
+    "shortDescription": " Restores player mana; Takes time to recharge",
+    "type": "Trap",
+    "unlockCost": 12,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Additional stored mana",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Additional stored mana",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Additional stored mana",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Mana Well cost reduced to 1250",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Mana Well recharges more quickly",
+        "unlockCost": 6
+      }
+    ],
+    "placement": "Wall",
+    "character": null
+  },
+  {
+    "name": "Paladin Guardian",
+    "shortDescription": "Sturdy melee guardians",
+    "type": "Trap",
+    "unlockCost": 12,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Paladins have more health",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Paladins have more health",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Paladins have more health",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Paladin attacks sometimes stun targets",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Paladins slowly regenerate health",
+        "unlockCost": 6
+      }
+    ],
+    "placement": null,
+    "character": null
+  },
+  {
+    "name": "Pounder",
+    "shortDescription": "Smashes enemies; resets after firing",
+    "type": "Trap",
+    "unlockCost": 10,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Pounder deals more damage",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Pounder deals more damage",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Pounder deals more damage",
+        "unlockCost": 14
+      },
+      {
+        "type": "Unique",
+        "description": "Pounder briefly stuns enemies",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Trolls and Ogres struck by the pounder sometimes drop coins",
+        "unlockCost": 6
+      }
+    ],
+    "placement": "Ceiling",
+    "character": null
+  },
+  {
+    "name": "Push Trap",
+    "shortDescription": "Sucks Pushes enemies away from the trap; resets after firing",
+    "type": "Trap",
+    "unlockCost": 8,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Push Trap reset time reduced",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Push Trap reset time reduced",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Push Trap reset time reduced",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Pushed enemies are briefly stunned",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Push Trap range increased",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Wall",
+    "character": null
+  },
+  {
+    "name": "Shock Zapper",
+    "shortDescription": "Electricity-flinging turret; adept at frying fliers",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Shock Zapper holds more charge for zapping enemies",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Shock Zapper holds more charge for zapping enemies",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Shock Zapper holds more charge for zapping enemies",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Shock Zapper briefly stuns targets",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Shock Zapper chains to an additional target but uses more charge per attack",
+        "unlockCost": 6
+      },
+      {
+        "type": "Special",
+        "description": "Shock Zapper can now be placed on walls",
+        "unlockCost": 12
+      }
+    ],
+    "placement": "Ceiling",
+    "character": null
+  },
+  {
+    "name": "Spike Trap",
+    "shortDescription": "Does damage when stepped on; resets after firing",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Floor Spikes reset faster",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Floor Spikes reset faster",
+        "unlockCost": 4
+      },
+      {
+        "type": "Tier",
+        "description": "Floor Spikes reset faster",
+        "unlockCost": 9
+      },
+      {
+        "type": "Unique",
+        "description": "Damaged enemies are briefly slowed",
+        "unlockCost": 4
+      },
+      {
+        "type": "Unique",
+        "description": "Damaged enemies bleed taking additional damage",
+        "unlockCost": 4
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Spore Mushrooms",
+    "shortDescription": "  Converts the first enemy that steps on it",
+    "type": "Trap",
+    "unlockCost": 15,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Controlled enemies have extra health",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Controlled enemies have extra health",
+        "unlockCost": 8
+      },
+      {
+        "type": "Tier",
+        "description": "Controlled enemies have extra health",
+        "unlockCost": 17
+      },
+      {
+        "type": "Unique",
+        "description": "Spore Mushrooms reset much faster",
+        "unlockCost": 7
+      },
+      {
+        "type": "Unique",
+        "description": "Kobold Runners converted by spores are extremely dangerous to the enemy",
+        "unlockCost": 7
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Spring Trap",
+    "shortDescription": "Throws enemies; resets after firing",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Spring Trap cost reduced to 600, 525, 450",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Spring Trap cost reduced to 600, 525, 450",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Spring Trap cost reduced to 600, 525, 450",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Spring Trap sometimes flips heavier enemies",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Spring Trap reset time reduced",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Steam Trap",
+    "shortDescription": "Blasts steam and levitates enemies; resets after firing",
+    "type": "Trap",
+    "unlockCost": 6,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Steam Trap cost reduced to 350",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Steam Trap cost reduced to 350",
+        "unlockCost": 5
+      },
+      {
+        "type": "Tier",
+        "description": "Steam Trap cost reduced to 350",
+        "unlockCost": 11
+      },
+      {
+        "type": "Unique",
+        "description": "Steam Trap chills targets for a time",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Steam Trap reset time reduced",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Floor",
+    "character": null
+  },
+  {
+    "name": "Swinging Mace",
+    "shortDescription": "Smashes into enemies; constantly in motion",
+    "type": "Trap",
+    "unlockCost": 14,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Swinging Mace damage increased",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Swinging Mace damage increased",
+        "unlockCost": 8
+      },
+      {
+        "type": "Tier",
+        "description": "Swinging Mace damage increased",
+        "unlockCost": 16
+      },
+      {
+        "type": "Unique",
+        "description": "Swinging Mace swings faster",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Swinging Mace stuns enemies it hits",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Ceiling",
+    "character": null
+  },
+  {
+    "name": "Tar",
+    "shortDescription": "Slows down enemies",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Tar Trap cost reduced to 400, 350, 300",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Tar Trap cost reduced to 400, 350, 300",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Tar Trap cost reduced to 400, 350, 300",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies are slowed even more",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Tar Trap slowing effect persists briefly after enemies leave the tar",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Floor",
+    "character": "War Mage"
+  },
+  {
+    "name": "Void Wall",
+    "shortDescription": "Anything thrown in dies instantly",
+    "type": "Trap",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Increases coin drop chances",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Increases coin drop chances",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Increases coin drop chances",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Throwing enemies into the void heals the player",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies thrown into the void sometimes return as skeletons to fight for the player",
+        "unlockCost": 5
+      }
+    ],
+    "placement": "Wall",
+    "character": null
+  },
+  {
+    "name": "Wall Blades",
+    "shortDescription": "Chops enemies apart; resets after firing",
+    "type": "Trap",
+    "unlockCost": 14,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Wall Blades deal increased damage",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Wall Blades deal increased damage",
+        "unlockCost": 8
+      },
+      {
+        "type": "Tier",
+        "description": "Wall Blades deal increased damage",
+        "unlockCost": 16
+      },
+      {
+        "type": "Unique",
+        "description": "Wall Blades briefly cause enemies to bleed",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Wall Blades reset time reduced",
+        "unlockCost": 6
+      }
+    ],
+    "placement": "Wall",
+    "character": null
+  },
+  {
+    "name": "Alchemists Satchel",
+    "type": "Weapon",
+    "unlockCost": 14,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Alchemy bombs deal increased damage and have increased area of effect.",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Alchemy bombs deal increased damage and have increased area of effect.",
+        "unlockCost": 8
+      },
+      {
+        "type": "Tier",
+        "description": "Alchemy bombs deal increased damage and have increased area of effect.",
+        "unlockCost": 16
+      },
+      {
+        "type": "Unique",
+        "description": "Acid bombs slow enemies for a few seconds",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Acid bombs destroyed by traps or weapons deal additional acid damage over a brief time.",
+        "unlockCost": 6
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "places acid bombs",
+    "secondary": "remotely detonates them"
+  },
+  {
+    "name": "Bladestaff",
+    "type": "Weapon",
+    "unlockCost": 8,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Bladestaff deals increased damage",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Bladestaff deals increased damage",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Bladestaff deals increased damage",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Dealing damage with the bladestaff briefly increases run speed",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Dealing damage with the bladestaff grants a shielding effect",
+        "unlockCost": 5
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "attack the enemy up close",
+    "secondary": "knock enemies away"
+  },
+  {
+    "name": "Blunderbuss",
+    "type": "Weapon",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Blunderbuss grenades deal more damage and cost less mana",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Blunderbuss grenades deal more damage and cost less mana",
+        "unlockCost": 5
+      },
+      {
+        "type": "Tier",
+        "description": "Blunderbuss grenades deal more damage and cost less mana",
+        "unlockCost": 11
+      },
+      {
+        "type": "Unique",
+        "description": "Blunderbuss primary attack sometimes causes targets to briefly bleed",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Blunderbuss primary attack sometimes knocks back heavy enemies",
+        "unlockCost": 5
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "attacks the enemy at a distance",
+    "secondary": "launch grenades that throw enemies"
+  },
+  {
+    "name": "Bone Amulet",
+    "type": "Weapon",
+    "unlockCost": 12,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Increases bone golem health and attack damage",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Increases bone golem health and attack damage",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Increases bone golem health and attack damage",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Bone amulet primary attack goes further",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Bone amulet primary attack deals more damage",
+        "unlockCost": 5
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "bones of dead orcs explode from the ground doing damage",
+    "secondary": "summons bone golem"
+  },
+  {
+    "name": "Crossbow",
+    "type": "Weapon",
+    "unlockCost": 8,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Headshots deal extra damage",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Headshots deal extra damage",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Headshots deal extra damage",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Primary attack sometimes sets targets on fire",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Headshots generate mana",
+        "unlockCost": 5
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "attack the enemy at range",
+    "secondary": "launch a stun bomb"
+  },
+  {
+    "name": "Dwarven Hammer",
+    "type": "Weapon",
+    "unlockCost": 13,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Whirlwind attack does increased damage",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Whirlwind attack does increased damage",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Whirlwind attack does increased damage",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Take less damage while using whirlwind",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Primary attack stuns enemy",
+        "unlockCost": 6
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "attack the enemy up close",
+    "secondary": "whirlwind mode that drains mana"
+  },
+  {
+    "name": "Flame Bracers",
+    "type": "Weapon",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Fireballs cost less mana and burn targets longer",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Fireballs cost less mana and burn targets longer",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Fireballs cost less mana and burn targets longer",
+        "unlockCost": 13
+      },
+      {
+        "type": "Unique",
+        "description": "Fire Wall lasts longer",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Fire Wall briefly stuns enemies",
+        "unlockCost": 5
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "throw fireballs",
+    "secondary": "summon a flame wall"
+  },
+  {
+    "name": "Ice Amulet",
+    "type": "Weapon",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Adds an additional ice projectile to primary attack",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Adds an additional ice projectile to primary attack",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Adds an additional ice projectile to primary attack",
+        "unlockCost": 14
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies frozen by secondary attack are left chilled after they thaw",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies frozen by secondary attack take additional damage",
+        "unlockCost": 6
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "freeze enemies at range",
+    "secondary": "area frost attack freezes nearby enemies"
+  },
+  {
+    "name": "Polymorph Ring",
+    "type": "Weapon",
+    "unlockCost": 13,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Primary attack has less chance for monster transformations, increased chance for chicken",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Primary attack has less chance for monster transformations, increased chance for chicken",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Primary attack has less chance for monster transformations, increased chance for chicken",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Secondary transforms you into a frost ogre, who deals ice damage and is resistant to ice effects",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Secondary transforms you into a fire ogre, who deals fire damage and is resistant to fire effects",
+        "unlockCost": 6
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "randomly transforms enemies",
+    "secondary": "transform yourself into an ogre"
+  },
+  {
+    "name": "Ring of Lightning",
+    "type": "Weapon",
+    "unlockCost": 12,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Primary attack chains to an additional target",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Primary attack chains to an additional target",
+        "unlockCost": 7
+      },
+      {
+        "type": "Tier",
+        "description": "Primary attack chains to an additional target",
+        "unlockCost": 15
+      },
+      {
+        "type": "Unique",
+        "description": "Lightning Storm now also chills some enemies",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Lightning Storm duration increased",
+        "unlockCost": 6
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "cast chain lightning at enemies",
+    "secondary": "summons a storm of lightning"
+  },
+  {
+    "name": "Sceptre of Domination",
+    "type": "Weapon",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Charm lasts longer and charm death causes more damage",
+        "unlockCost": 2
+      },
+      {
+        "type": "Tier",
+        "description": "Charm lasts longer and charm death causes more damage",
+        "unlockCost": 5
+      },
+      {
+        "type": "Tier",
+        "description": "Charm lasts longer and charm death causes more damage",
+        "unlockCost": 11
+      },
+      {
+        "type": "Unique",
+        "description": "Fully-charged primary attack has a larger radius",
+        "unlockCost": 5
+      },
+      {
+        "type": "Unique",
+        "description": "Primary attack deals extra damage to charmed enemies",
+        "unlockCost": 5
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "fast ranged attack; can be charged",
+    "secondary": "charm an enemy for a time"
+  },
+  {
+    "name": "Vampiric Gauntlets",
+    "type": "Weapon",
+    "unlockCost": 14,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Primary does additional damage and healing",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Primary does additional damage and healing",
+        "unlockCost": 8
+      },
+      {
+        "type": "Tier",
+        "description": "Primary does additional damage and healing",
+        "unlockCost": 16
+      },
+      {
+        "type": "Unique",
+        "description": "Enemies are immobilized for a short time",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Secondary health to mana conversion rate improved",
+        "unlockCost": 6
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "drains enemy health",
+    "secondary": "trades health for mana"
+  },
+  {
+    "name": "Wind Belt",
+    "type": "Weapon",
+    "unlockCost": 10,
+    "upgrades": [
+      {
+        "type": "Tier",
+        "description": "Primary attack has increased range, increased strength, and decreased mana cost",
+        "unlockCost": 3
+      },
+      {
+        "type": "Tier",
+        "description": "Primary attack has increased range, increased strength, and decreased mana cost",
+        "unlockCost": 6
+      },
+      {
+        "type": "Tier",
+        "description": "Primary attack has increased range, increased strength, and decreased mana cost",
+        "unlockCost": 14
+      },
+      {
+        "type": "Unique",
+        "description": "Picked-up enemies explode when thrown",
+        "unlockCost": 6
+      },
+      {
+        "type": "Unique",
+        "description": "Picked-up enemies take damage while slowly healing the player",
+        "unlockCost": 6
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "primary": "throw enemies backwards",
+    "secondary": "pick up and drop enemies and objects"
+  },
+  {
+    "name": "Berserker",
+    "type": "Trinket",
+    "unlockCost": 10,
+    "upgrades": [
+      {
+        "type": "Special",
+        "description": "Active berserk ability lasts 9 seconds, up from 6",
+        "unlockCost": 5
+      },
+      {
+        "type": "Special",
+        "description": "Berserk grants 33% damage, up from 25%",
+        "unlockCost": 13
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "passive": "deal bonus damage when low on health",
+    "active": "spend health to activate berserk mods"
+  },
+  {
+    "name": "Defense",
+    "type": "Trinket",
+    "unlockCost": 5,
+    "upgrades": [
+      {
+        "type": "Special",
+        "description": "Reduces damage taken",
+        "unlockCost": 3
+      },
+      {
+        "type": "Special",
+        "description": "Penalty to attack while shielded halved",
+        "unlockCost": 10
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "passive": "increases player health",
+    "active": "shield player from damage"
+  },
+  {
+    "name": "Freedom",
+    "type": "Trinket",
+    "unlockCost": 7,
+    "upgrades": [
+      {
+        "type": "Special",
+        "description": "Passive and active abilities apply to being frozen as well",
+        "unlockCost": 4
+      },
+      {
+        "type": "Special",
+        "description": "Active ability also clears chill and slow effects",
+        "unlockCost": 11
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "passive": "resist stuns",
+    "active": "break other players out of stun and briefly grant stun immunity"
+  },
+  {
+    "name": "Healing",
+    "type": "Trinket",
+    "unlockCost": 0,
+    "upgrades": [
+      {
+        "type": "Special",
+        "description": "Passive heal rate increased",
+        "unlockCost": 4
+      },
+      {
+        "type": "Special",
+        "description": "Active healing mana cost reduced",
+        "unlockCost": 11
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "passive": "slowly regenerates health",
+    "active": "heal self and allies"
+  },
+  {
+    "name": "Mana Rage",
+    "type": "Trinket",
+    "unlockCost": 13,
+    "upgrades": [
+      {
+        "type": "Special",
+        "description": "Increased base mana pool",
+        "unlockCost": 5
+      },
+      {
+        "type": "Special",
+        "description": "Mana Rage lasts longer",
+        "unlockCost": 15
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "passive": "higher mana capactiy",
+    "active": "mana rage regenerates mana quickly for a short time"
+  },
+  {
+    "name": "Rift Defender",
+    "type": "Trinket",
+    "unlockCost": 12,
+    "upgrades": [
+      {
+        "type": "Special",
+        "description": "Double additional rift points",
+        "unlockCost": 5
+      },
+      {
+        "type": "Special",
+        "description": "Active ability stun lasts longer",
+        "unlockCost": 14
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "passive": "increases rift points",
+    "active": "stun all enemies"
+  },
+  {
+    "name": "Scavenger",
+    "type": "Trinket",
+    "unlockCost": 9,
+    "upgrades": [
+      {
+        "type": "Special",
+        "description": "Increased chance for coin drops from orcs and kobolds",
+        "unlockCost": 4
+      },
+      {
+        "type": "Special",
+        "description": "Active ability generates extra coin",
+        "unlockCost": 12
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "passive": "all enemies have a chance to drop coins",
+    "active": "all enemies worth extra coin"
+  },
+  {
+    "name": "Trap Reset",
+    "type": "Trinket",
+    "unlockCost": 11,
+    "upgrades": [
+      {
+        "type": "Special",
+        "description": "Traps reset even faster",
+        "unlockCost": 5
+      },
+      {
+        "type": "Special",
+        "description": "Active ability mana cost reduced",
+        "unlockCost": 14
+      }
+    ],
+    "placement": null,
+    "character": null,
+    "passive": "traps reset faster",
+    "active": "reset all traps for a mana cost"
+  }
+]

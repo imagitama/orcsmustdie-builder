@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Acid Sprayer",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Wall"
+  },
+  {
+    "name": "Archer Guardian",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Guardian"
+  },
+  {
+    "name": "Arrow Wall",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Wall"
+  },
+  {
+    "name": "Autoballista",
+    "unlockCost": 13,
+    "upgrades": [],
+    "placement": "Ceiling"
+  },
+  {
+    "name": "Barricade",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Bear Trap",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Boom Barrel",
+    "unlockCost": 3,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Boom Barrel Dispenser",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Wall"
+  },
+  {
+    "name": "Boulder Chute",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Ceiling"
+  },
+  {
+    "name": "Brimstone",
+    "unlockCost": 7,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Coinforge",
+    "unlockCost": 5,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Decoy",
+    "unlockCost": 11,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Dwarf Guardian",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Guardian"
+  },
+  {
+    "name": "Floor Scorcher",
+    "unlockCost": 16,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Grinder",
+    "unlockCost": 12,
+    "upgrades": [],
+    "placement": "Wall"
+  },
+  {
+    "name": "Haymaker",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Ceiling"
+  },
+  {
+    "name": "Healing Well",
+    "unlockCost": 12,
+    "upgrades": [],
+    "placement": "Wall"
+  },
+  {
+    "name": "Ice Vent",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Mana Well",
+    "unlockCost": 12,
+    "upgrades": [],
+    "placement": "Wall"
+  },
+  {
+    "name": "Paladin Guardian",
+    "unlockCost": 12,
+    "upgrades": [],
+    "placement": "Guardian"
+  },
+  {
+    "name": "Pounder",
+    "unlockCost": 10,
+    "upgrades": [],
+    "placement": "Ceiling"
+  },
+  {
+    "name": "Push Trap",
+    "unlockCost": 8,
+    "upgrades": [],
+    "placement": "Wall"
+  },
+  {
+    "name": "Shock Zapper",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Ceiling"
+  },
+  {
+    "name": "Spike Trap",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Spore Mushroom",
+    "unlockCost": 15,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Spring Trap",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Steam Trap",
+    "unlockCost": 6,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Swinging Mace",
+    "unlockCost": 14,
+    "upgrades": [],
+    "placement": "Ceiling"
+  },
+  {
+    "name": "Tar",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Floor"
+  },
+  {
+    "name": "Void Wall",
+    "unlockCost": 0,
+    "upgrades": [],
+    "placement": "Wall"
+  },
+  {
+    "name": "Wall Blades",
+    "unlockCost": 14,
+    "upgrades": [],
+    "placement": "Wall"
+  }
+]
