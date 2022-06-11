@@ -143,7 +143,7 @@ const ItemIcon = ({
 const IconForBuild = ({ name }: { name: string }) => {
   const { imageUrl } = getItemByName(name);
   const dispatch = useAppDispatch();
-  const onClickItem = () => dispatch(unhighlightItem(name));
+  const onClickItem = () => dispatch(selectItem(name));
 
   return (
     <div

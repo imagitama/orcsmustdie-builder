@@ -1,21 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Builder } from './features/builder/Builder';
-import './App.css';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Builder } from "./features/builder/Builder";
+import "./App.css";
 
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
   },
 });
 
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-    <div className="App">
-      <Builder />
-    </div>
+      <div className="App">
+        <Builder />
+      </div>
     </ThemeProvider>
   );
 }
