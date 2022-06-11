@@ -26,6 +26,7 @@ import {
   selectItem,
   selectPurchasedItems,
   selectPurchasedUpgrades,
+  selectSearchTerm,
   selectSelectedItem,
   selectSelectedItems,
   selectSelectedTab,
@@ -33,6 +34,7 @@ import {
   selectTab,
   sellItem,
   sellUpgrade,
+  setSearchTerm,
   setSkullCount,
   unhighlightItem,
 } from "./builderSlice";
@@ -585,9 +587,37 @@ const PurchasedIcon = ({
   </div>
 );
 
+const InfoBlock = ({
+  children,
+  style = {},
+}: {
+  children: any;
+  style?: React.CSSProperties;
+}) => (
+  <div
+    style={{
+      padding: "1rem 0 0 1rem",
+      ...style,
+    }}
+  >
+    {children}
+  </div>
+);
+
 const ItemView = ({ name }: { name: string }) => {
   const item = getItemByName(name);
-  const { buildCost, unlockCost, upgrades, imageUrl, character } = item;
+  const {
+    buildCost,
+    unlockCost,
+    upgrades,
+    imageUrl,
+    character,
+    shortDescription,
+    passive,
+    active,
+    primary,
+    secondary,
+  } = item;
   const dispatch = useAppDispatch();
 
   const purchasedItems = useAppSelector(selectPurchasedItems);
@@ -624,13 +654,7 @@ const ItemView = ({ name }: { name: string }) => {
           </div>
         ) : null}
         <img src={imageUrl} width="100%" />
-        <div
-          style={{
-            padding: "1rem 0 0 1rem",
-          }}
-        >
-          Build cost: {buildCost}
-        </div>
+        <InfoBlock>Build cost: {buildCost}</InfoBlock>
         <div
           style={{
             display: "flex",
@@ -658,26 +682,31 @@ const ItemView = ({ name }: { name: string }) => {
             {isHighlighted ? "Remove" : "Add"}
           </Button>
         </div>
-        <div
-          style={{
-            padding: "1rem 0 0 1rem",
-            opacity: isPurchased ? 1 : 0.2,
-          }}
-        >
-          Selling also sells all upgrades
-        </div>
-        <div>
-          {character === characters.Sorceress ||
-          character === characters.WarMage ? (
-            <div
-              style={{
-                padding: "1rem 0 0 1rem",
-              }}
-            >
-              This item is restricted to a starting character
-            </div>
-          ) : null}
-        </div>
+        {shortDescription}
+        {passive ? (
+          <InfoBlock>
+            <strong>Passive:</strong> {passive}
+          </InfoBlock>
+        ) : null}
+        {active ? (
+          <InfoBlock>
+            <strong>Active:</strong> {active}
+          </InfoBlock>
+        ) : null}
+        {primary ? (
+          <InfoBlock>
+            <strong>Primary:</strong> {primary}
+          </InfoBlock>
+        ) : null}
+        {secondary ? (
+          <InfoBlock>
+            <strong>Secondary:</strong> {secondary}
+          </InfoBlock>
+        ) : null}
+        {character === characters.Sorceress ||
+        character === characters.WarMage ? (
+          <InfoBlock>This item is restricted to a starting character</InfoBlock>
+        ) : null}
       </div>
     </div>
   );
@@ -703,6 +732,7 @@ const MyItemsTab = ({
 const Shop = () => {
   const selectedTab = useAppSelector(selectSelectedTab);
   const selectedItem = useAppSelector(selectSelectedItem);
+  const searchTerm = useAppSelector(selectSearchTerm);
   const dispatch = useAppDispatch();
 
   return (
@@ -721,15 +751,71 @@ const Shop = () => {
         ))}
       </div>
       <div style={{ width: "100%" }}>
-        {selectedItem ? (
+        {searchTerm ? (
+          <Search />
+        ) : selectedItem ? (
           <ItemView name={selectedItem} />
         ) : selectedTab === myItemsTabName ? (
           <MyItems />
-        ) : (
+        ) : selectedTab ? (
           <ItemsByType type={selectedTab} />
-        )}
+        ) : null}
       </div>
     </div>
+  );
+};
+
+const Search = () => {
+  const searchTerm = useAppSelector(selectSearchTerm);
+  const searchTermLower = searchTerm.toLowerCase();
+
+  const results = items.filter(
+    ({ shortDescription, passive, active, primary, secondary, upgrades }) => {
+      const subResult = [
+        shortDescription,
+        passive,
+        active,
+        primary,
+        secondary,
+      ].find((item) => item?.toLowerCase().includes(searchTermLower));
+
+      if (subResult) {
+        return true;
+      }
+
+      const upgradeResult = upgrades.find(
+        ({ description: upgradeDescription }) =>
+          upgradeDescription.toLowerCase().includes(searchTermLower)
+      );
+
+      if (upgradeResult) {
+        return true;
+      }
+
+      return false;
+    }
+  );
+
+  if (!results.length) {
+    return (
+      <div
+        style={{
+          color: "rgb(255, 100, 100)",
+          textAlign: "center",
+          padding: "1rem",
+        }}
+      >
+        No results found
+      </div>
+    );
+  }
+
+  return (
+    <ItemTiles>
+      {results.map((item) => (
+        <ItemTile key={item.name} name={item.name} />
+      ))}
+    </ItemTiles>
   );
 };
 
@@ -756,13 +842,37 @@ const Exporter = () => {
   );
 };
 
+const SearchInput = () => {
+  const dispatch = useAppDispatch();
+  const searchTerm = useAppSelector(selectSearchTerm);
+
+  return (
+    <div style={{ padding: "1rem" }}>
+      <TextField
+        value={searchTerm}
+        onChange={(e) => dispatch(setSearchTerm(e.target.value))}
+        placeholder="Search..."
+      />
+    </div>
+  );
+};
+
 export function Builder() {
   return (
     <div>
-      <Skulls />
+      <div style={{ display: "flex" }}>
+        <div>
+          <SearchInput />
+        </div>
+        <div style={{ width: "100%" }}>
+          <Skulls />
+        </div>
+      </div>
       <Build />
       <Shop />
+      <hr />
       <Exporter />
+      <hr />
       <Button
         onClick={() => {
           window.localStorage.clear();

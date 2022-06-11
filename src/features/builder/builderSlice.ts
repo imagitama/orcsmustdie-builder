@@ -3,9 +3,10 @@ import { RootState } from "../../app/store";
 import { getItemByName } from "../../items";
 
 export interface BuilderState {
+  searchTerm: string;
   highlightedItems: string[];
   skullCount: number;
-  selectedTab: string;
+  selectedTab: string | null;
   selectedItem: string | null;
   purchasedItems: string[];
   purchasedUpgrades: string[];
@@ -15,6 +16,8 @@ export interface BuilderState {
 export const myItemsTabName = "myitems";
 
 const initialState: BuilderState = {
+  // search
+  searchTerm: "",
   // build
   highlightedItems: [],
   // shop
@@ -31,6 +34,13 @@ export const builderSlice = createSlice({
   name: "builder",
   initialState,
   reducers: {
+    // search
+    setSearchTerm: (state, action: PayloadAction<string>) => {
+      state.searchTerm = action.payload;
+      state.selectedTab = null;
+      state.selectedItem = null;
+    },
+
     // build
     highlightItem: (state, action: PayloadAction<string>) => {
       state.highlightedItems = [...state.highlightedItems, action.payload];
@@ -49,9 +59,11 @@ export const builderSlice = createSlice({
     selectTab: (state, action: PayloadAction<string>) => {
       state.selectedTab = action.payload;
       state.selectedItem = null;
+      state.searchTerm = "";
     },
     selectItem: (state, action: PayloadAction<string>) => {
       state.selectedItem = action.payload;
+      state.searchTerm = "";
     },
     buyItem: (state, action: PayloadAction<string>) => {
       state.purchasedItems = [...state.purchasedItems, action.payload];
@@ -76,19 +88,11 @@ export const builderSlice = createSlice({
         (id) => id !== action.payload
       );
     },
-    // build
-    // selectItem: (state, action: PayloadAction<string>) => {
-    //   state.selectedItems = [...state.selectedItems, action.payload];
-    // },
-    // unselectItem: (state, action: PayloadAction<string>) => {
-    //   state.selectedItems = state.selectedItems.filter(
-    //     (id) => id !== action.payload
-    //   );
-    // },
   },
 });
 
 export const {
+  setSearchTerm,
   buyItem,
   buyUpgrade,
   sellItem,
@@ -99,6 +103,8 @@ export const {
   highlightItem,
   unhighlightItem,
 } = builderSlice.actions;
+
+export const selectSearchTerm = (state: RootState) => state.builder.searchTerm;
 
 export const selectHighlightedItems = (state: RootState) =>
   state.builder.highlightedItems;
